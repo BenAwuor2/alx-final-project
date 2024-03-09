@@ -22,7 +22,7 @@ function Cart() {
           {cartItems.map((item) => (
             <div className="card mb-3" key={item.id}>
               <div className="card-body">
-                <h5 className="card-title">{item.name}</h5>
+                <h5 className="card-title">{item.title}</h5>
                 <p className="card-text">Quantity: {item.qty || 1}</p>
                 <p className="card-text">Price: ${item.price}</p>
                 <button className="btn btn-danger" onClick={() => handleDelete(item.id)}>Delete</button>
@@ -37,6 +37,7 @@ function Cart() {
 }
 
 export default Cart;
+
 
 
 
